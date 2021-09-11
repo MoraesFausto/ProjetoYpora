@@ -18,6 +18,6 @@ p{
 .h0me{
 	margin: 0;
 	padding: 0;
-	background-image: url("river.jpeg");
+	background-image: asset-url("river.jpeg");
 	background-size: 1500px 900px;
 }
