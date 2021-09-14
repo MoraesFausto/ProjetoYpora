@@ -7,7 +7,7 @@ ruby '3.0.2'
 gem 'devise'
 gem 'rspec-rails'
 gem 'geocoder'
-gem 'turbolinks'
+
 
 
 
