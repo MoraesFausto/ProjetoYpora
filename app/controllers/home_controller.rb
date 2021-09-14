@@ -6,4 +6,10 @@ class HomeController < ApplicationController
   end
   def about
   end
+  def irrig
+  end
+  def cria
+  end
+  def human
+  end
 end

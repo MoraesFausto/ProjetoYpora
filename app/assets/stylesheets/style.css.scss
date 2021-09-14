@@ -12,7 +12,7 @@ p{
 	color: rgb(2, 77, 33);
 }
 ::placeholder{
-	color:white;
+	color: white;
 	opacity: 1;
 }
 .h0me{
@@ -20,4 +20,11 @@ p{
 	padding: 0;
 	background-image: asset-url("river.jpeg");
 	background-size: 1500px 900px;
+}
+.dropdown-menu a{
+    color: #3fc03f !important;
+}
+.btn{
+	background-color: white;
+	color: green;
 }

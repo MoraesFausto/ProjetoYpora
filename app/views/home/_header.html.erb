@@ -18,19 +18,22 @@
             Ferramentas
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Irrigação</a></li>
-            <li><a class="dropdown-item" href="#">Animais</a></li>
+            <li class="dropdown-item" > <%= link_to "Irrigação", home_irrig_path, class: "nav-link" %>
+            </li>
+            <li class="dropdown-item" > <%= link_to "Criação", home_cria_path, class: "nav-link" %>
+            </li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Consumo humano</a></li>
+            <li class="dropdown-item" > <%= link_to "Consumo humano", home_human_path, 
+            class: "nav-link" %>  </li>
           </ul>
         </li>
-        <li class="nav-abo"> 
-        <%= link_to "Sobre nos", home_about_path, class: "nav-link" %>
+        <li class="nav-item"> 
+        <%= link_to "Sobre nós", home_about_path, class: "nav-link" %>
         </li>        
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn" type="submit">Search</button>
       </form>
     </div>
   </div>
