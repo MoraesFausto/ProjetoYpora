@@ -12,4 +12,6 @@ class HomeController < ApplicationController
   end
   def human
   end
+  
+
 end

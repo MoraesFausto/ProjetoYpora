@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mg²⁺ :</strong>
+  <%= @analise.Mg2%> 
+</p>
+
+<p>
+  <strong>Ca²⁺ :</strong>
+  <%= @analise.Ca2 %>
+</p>
+
+<p>
+  <strong>K⁺ :</strong>
+  <%= @analise.K %>
+</p>
+
+<p>
+  <strong>N⁺ :</strong>
+  <%= @analise.N %>
+</p>
+
+<p>
+  <strong>Cl⁻ :</strong>
+  <%= @analise.Cl %>
+</p>
+
+<p>
+  <strong>SO<sub>4</sub>²⁻ :</strong>
+  <%= @analise.SO4 %>
+</p>
+
+<p>
+  <strong>CO<sub>3</sub>²⁻ :</strong>
+  <%= @analise.CO3 %>
+</p>
+
+<p>
+  <strong>HCO<sub>3</sub>²⁻ :</strong>
+  <%= @analise.HCO3 %>
+</p>
+
+<p>
+  <strong>pH :</strong>
+  <%= @analise.pH %>
+</p>
+
+<p>
+  <strong>B <sub>(ppm)</sub> :</strong>
+  <%= @analise.B %>
+</p>
+
+<p>
+  <strong>CE<sub>a</sub> :</strong>
+  <%= @analise.CEa %>
+</p>
+
+<%= link_to 'Editar', edit_analise_path(@analise), class:"btn btn-success" %> 
+<%= link_to 'Voltar', analises_path, class:"btn btn-success" %>

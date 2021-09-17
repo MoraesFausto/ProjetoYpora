@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Análises</h2>
+<br/><br/>
+<table  class="table table-striped  table-hover">
+  <thead class="thead-dark bg-success">
+    <tr>
+      <th>Mg²⁺</th>
+      <th>Ca²⁺</th>
+      <th>K⁺</th>
+      <th>Na⁺</th>
+      <th>Cl⁻</th>
+      <th>SO<sub>4</sub>²⁻</th>
+      <th>CO<sub>3</sub>²⁻</th>
+      <th>HCO<sub>3</sub>²⁻</th>
+      <th>pH</th>
+      <th>B<sub>(ppm)</sub></th>
+      <th>CE<sub>a</sub></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @analises.each do |analise| %>
+      <tr>
+        <td><%= analise.Mg2 %></td>
+        <td><%= analise.Ca2 %></td>
+        <td><%= analise.K %></td>
+        <td><%= analise.N %></td>
+        <td><%= analise.Cl %></td>
+        <td><%= analise.SO4 %></td>
+        <td><%= analise.CO3 %></td>
+        <td><%= analise.HCO3 %></td>
+        <td><%= analise.pH %></td>
+        <td><%= analise.B %></td>
+        <td><%= analise.CEa %></td>
+        <td><%= link_to 'Exibir', analise %></td>
+        <td><%= link_to 'Editar', edit_analise_path(analise) %></td>
+        <td><%= link_to 'Remover', analise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova Analise', new_analise_path, class:"btn btn-success"%>

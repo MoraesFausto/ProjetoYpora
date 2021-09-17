@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_11_011449) do
+ActiveRecord::Schema.define(version: 2021_09_16_180113) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "analises", force: :cascade do |t|
+    t.float "Mg2"
+    t.float "Ca2"
+    t.float "K"
+    t.float "N"
+    t.float "Cl"
+    t.float "SO4"
+    t.float "CO3"
+    t.float "HCO3"
+    t.float "pH"
+    t.float "B"
+    t.float "CEa"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

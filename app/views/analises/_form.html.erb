@@ -1,0 +1,110 @@
+<%= form_with(model: analise) do |form| %>
+  <% if analise.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(analise.errors.count, "error") %> prohibited this analise from being saved:</h2>
+
+      <ul>
+        <% analise.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p> Cátions </p>
+ 
+    <div class = "row">
+    <div class ="col">
+
+     <div class="field">
+        <p><br/>Mg²⁺</p>
+      <%= form.label :Mg2, '.', class: "magnos" %>
+      <%= form.text_field :Mg2 %>
+    </div>
+  
+    <div class="field">
+    <p><br/>Ca²⁺</p>
+      <%= form.label :Ca2, '.' , class: "magnos"%>
+      <%= form.text_field :Ca2 %>
+    </div>
+    </div>
+
+    <div class="col">  
+    <div class="field">
+      <p><br/>K⁺</p>
+      <%= form.label :K, '.', class: "magnos"%>
+      <%= form.text_field :K%>
+    </div>
+
+    <div class="field">
+      <p><br/>Na⁺</p>
+      <%= form.label :N, ' . ', class: "magnos" %>
+      <%= form.text_field :N %>
+    </div>
+    </div>
+    </div>
+    <br/>
+    <p> Ânions </p>
+     <div class="row">
+     <div class="col">
+     
+  
+    <div class="field">
+  <p><br/>Cl⁻</p>
+    <%= form.label :Cl, '.' , class: "magnos"%>
+    <%= form.text_field :Cl %>
+  </div>
+
+  <div class="field"> 
+  <p><br/>SO<sub>4</sub>²⁻</p>
+    <%= form.label :SO4, ' . ', class: "magnos"%>
+    <%= form.text_field :SO4 %>
+  </div>
+  </div>
+
+  <div class="col">  
+  
+  <div class="field">
+  <p><br/>CO<sub>3</sub>²⁻</p>
+    <%= form.label :CO3, '.' , class: "magnos"%>
+    <%= form.text_field :CO3 %>
+  </div>
+
+  <div class="field">
+  <p><br/>HCO<sub>3</sub>²⁻</p>
+    <%= form.label :HCO3, '.' , class: "magnos"%>
+    <%= form.text_field :HCO3 %>
+  </div>
+  </div>
+  </div>
+  
+  <br/> 
+  
+   <p> Unidades da CE<sub>a</sub>
+  
+   <div class="row">
+    <div class="col">   
+  <div class="field">
+  <p><br/>pH</p>
+    <%= form.label :pH, '.' , class: "magnos"%>
+    <%= form.text_field :pH  %>
+  </div>
+  <div class="field">
+  <p><br/>CE<sub>a</sub></p>
+    <%= form.label :CEa, '.' , class: "magnos"%>
+    <%= form.text_field :CEa %>
+  </div>
+  </div>
+  
+  <div class="col">
+  <div class="field">
+  <p><br/>B<sub>ppm</sub></p>
+    <%= form.label :B, '.' , class: "magnos"%>
+    <%= form.text_field :B %>
+  </div>
+  </div>
+  <br/>
+    <div class="actions">
+    <%= form.submit 'Analisar', class:"btn btn-success" %>
+    <br/><br/>
+<% end %>

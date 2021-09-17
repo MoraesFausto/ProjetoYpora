@@ -2,24 +2,36 @@
 h1{
 	color: green;
 }
+
 h2{
+	text-align: center;
 	color:green;
 }
 h6{
-	color:green
+	color:green;
 }
 p{
 	color: rgb(2, 77, 33);
+}
+th{
+	color:white;
 }
 ::placeholder{
 	color: white;
 	opacity: 1;
 }
 .h0me{
+	text-align: center;	
 	margin: 0;
 	padding: 0;
-	background-image: asset-url("river.jpeg");
-	background-size: 1500px 900px;
+	background-image: asset-url("river.jpg");
+	background-size: 1400px 900px;
+}
+.field{
+	text-align: center;
+}
+.actions{
+	text-align: center;
 }
 .dropdown-menu a{
     color: #3fc03f !important;
@@ -27,4 +39,7 @@ p{
 .btn{
 	background-color: white;
 	color: green;
+}
+.magnos{
+	color: white;
 }
