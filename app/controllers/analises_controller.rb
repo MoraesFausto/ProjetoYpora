@@ -3,7 +3,6 @@ class AnalisesController < ApplicationController
 
   # GET /analises or /analises.json
   def index
-    @analises = Analise.all
   end
 
   # GET /analises/1 or /analises/1.json
